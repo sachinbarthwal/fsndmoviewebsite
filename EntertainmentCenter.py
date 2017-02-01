@@ -42,6 +42,6 @@ star_wars = Media.Movie(title[4], plot[4],imgurl[4]
 one27_hours = Media.Movie(title[5], plot[5],imgurl[5]
                      ,"https://www.youtube.com/watch?v=OlhLOWTnVoQ")
 #list of object is created
-movies = [avatar, the_dark_knight_rises, the_shawshank_redemption, fight_club, star_wars, one27_hours]
+moviesobject = [avatar, the_dark_knight_rises, the_shawshank_redemption, fight_club, star_wars, one27_hours]
 #object are passed in a function
-fresh_tomatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(moviesobject)
