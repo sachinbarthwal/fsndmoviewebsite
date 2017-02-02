@@ -4,6 +4,10 @@ import urllib
 import json
 
 # list of movies to be called from api
+"""
+Here i made a list of my favourite movies, i can add more movies.
+However i'll have to create object for that too
+"""
 movies = ['avatar', 'the dark knight rises', 'the shawshank redemption',
           'fight club', 'star wars', '127 hours']
 # Empty list is made to be used
@@ -14,10 +18,16 @@ i = 0
 # while loop is called to call the api for every movie
 while i < len(movies):
     # it opens the url
+    """
+    OMDB as an API i am using to fetch the data
+    """
     jsonurl = urllib.urlopen("http://www.omdbapi.com/?t="+movies[i]+"&y=&plot=short&r=json")
     # gets the response in the text
     text = json.loads(jsonurl.read())
     # appends the response in the list
+    """
+    [u'Title'] is a style of reading json element separately
+    """
     title.append(text[u'Title'])
     plot.append(text[u'Plot'])
     imgurl.append(text[u'Poster'])
@@ -47,4 +57,7 @@ one27_hours = Media.Movie(title[5], plot[5], imgurl[5]
 movies1 = [avatar, the_dark_knight_rises,
 			the_shawshank_redemption, fight_club, star_wars, one27_hours]
 # object are passed in a function
+"""
+Here i am calling a function in frest_tomatoes class which contains all the JS HTML abd CSS
+"""
 fresh_tomatoes.open_movies_page(movies1)
