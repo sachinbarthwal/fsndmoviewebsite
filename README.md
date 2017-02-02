@@ -33,6 +33,19 @@ How to run
 1. Download the fresh_tomatoes
 2. click on fresh_tomatoes.html to run the application
 
+How to use in python
+------------
+
+1. Download python from https://www.python.org/downloads/
+2. Try to download version 2.7 as these files are coded on 2.7
+3. Once downloaded and installed opne IDLE (Its like a command prompt for python)
+4. Now press cntrl+o to open the downloaded file.
+5. Make sure all the files are at one place/folder.
+6. Open EntertainmentCenter.py and press f5 to run it on python.
+7. It will call media.py and fresh_tomatoes.py and use their functions.
+8. If everything works perfectly you will be landed on browser with movie database website.
+
+
 How to make changes
 ------------
 
